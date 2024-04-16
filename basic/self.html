@@ -1,15 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <h3>{007}</h3>
-        <br>
-        <h3>pavanmg</h3>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      header {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 프로필 이미지 스타일 */
+      .myimg {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .profile-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      main,
+      nav {
+        text-align: center;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .card .description {
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+      .card .source {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        font-size: 12px;
+      }
+
+      .card .source:before {
+        content: "";
+        display: inline-block;
+        width: 16px; /* 이미지의 너비에 맞게 조정 */
+        height: 16px; /* 이미지의 높이에 맞게 조정 */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 이미지 경로 지정 */
+        background-size: cover;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="hi">
+        <h2>
+          Hi👋🏻,<br />
+          My name is<br />
+          Pavan MG<br />
+          I build things for web
+        </h2>
+      </div>
+      <div class="myimg">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC1VXslMyUPVhdED6RXNU7-2bWfeWCx1-gsH5-sP5Vg&s"
+          alt="프로필"
+        />
+      </div>
+    </header>
+    <nav>
+      <h3>My Tech Stack</h3>
+      <div>Technologies I've been working with recently</div>
+    </nav>
+    <main>
+      <!-- html -->
+      <img
+        width="50"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s"
+        alt="HTML"
+      />
+      <img
+        width="35"
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+        alt="CSS"
+      />
+      <img
+        width="50"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeab83jLxJNlqggbc0T40gUZ9D2VGLUg6cI2BNJ6Fwg&s"
+        alt="JavaScript"
+      />
+      <img
+        width="50"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+        alt="React"
+      />
+      <br />
+      <img
+        width="50"
+        src="https://avatars.githubusercontent.com/u/18133?s=280&v=4"
+        alt="Git"
+      />
+      <img
+        width="50"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfEXOKbO6MmI5PfTNBJX8B1f_0jkE574iUWkhTTiHa_g&s"
+        alt="VSCODE"
+      />
+      <img
+        width="50"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxuAKV9D75DDP7pwHy6ewIJ9qqd7vWoEssIYBimIR-g&s"
+        alt="Github"
+      />
+
+      <nav>
+        <h3>Projects</h3>
+        <div>Things I've built so for</div>
+      </nav>
+
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="https://i.namu.wiki/i/huPxv5_ir6xIokPke05pqY37o8EST8QYgLQALQI5Myhrj3YJqt1VyPe4s-JrSjxw5O1VsNt2XS8IfSIznuXf0Q.webp"
+            alt="이미지 설명"
+          />
+          <div class="description">
+            <p>프로젝트 SOPAR</p>
+          </div>
+          <div class="source">
+            <a
+              href="https://github.com/mju-2023-capstone-team-5"
+              target="_blank"
+              >GO GITHUB</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://i.namu.wiki/i/7Ml4qvhlNRl9hX3DRqHC7g_j-6voMFeXYaRKuCiR3cMXJP7KuFEA6kf0BEneLu99vYeLiFbeTTCleaV-1yux5A.webp"
+            alt="이미지 설명"
+          />
+          <div class="description">
+            <p>프로젝트2</p>
+          </div>
+          <div class="source">
+            <a href="https://github.com/janjinn/web_advanced" target="_blank"
+              >GO REPOSITORY</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>123-4567-8910</div>
+      <div>email@gmail.com</div>
+      <hr />
+      <div>Designed and built by Pavan MG with Love & Coffee</div>
+    </footer>
+  </body>
 </html>
