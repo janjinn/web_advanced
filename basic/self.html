@@ -4,98 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      header {
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      /* 프로필 이미지 스타일 */
-      .myimg {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        overflow: hidden;
-      }
-
-      .profile-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      main,
-      nav {
-        text-align: center;
-      }
-
-      .card-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .card {
-        width: 300px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        margin: 20px;
-        overflow: hidden;
-        position: relative;
-      }
-
-      .card img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .card .description {
-        padding: 10px;
-        background-color: #f0f0f0;
-      }
-      .card .source {
-        position: absolute;
-        bottom: 5px;
-        right: 10px;
-        font-size: 12px;
-      }
-
-      .card .source:before {
-        content: "";
-        display: inline-block;
-        width: 16px; /* 이미지의 너비에 맞게 조정 */
-        height: 16px; /* 이미지의 높이에 맞게 조정 */
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 이미지 경로 지정 */
-        background-size: cover;
-        margin-right: 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="selfstyle.css" />
   </head>
 
   <body>
+    <div class="logo">LOGO</div>
+
+    <div id="nav-items">
+      <div>Home</div>
+      <div>About</div>
+      <div>Tech Stack</div>
+      <div>Projects</div>
+    </div>
+
+    <hr />
+
     <header>
       <div class="hi">
         <h2>
           Hi👋🏻,<br />
           My name is<br />
-          Pavan MG<br />
+          janjinn!<br />
           I build things for web
         </h2>
       </div>
+
       <div class="myimg">
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC1VXslMyUPVhdED6RXNU7-2bWfeWCx1-gsH5-sP5Vg&s"
+          src="https://i.namu.wiki/i/IhFrc6uiSNlonNFRXzSNrKrhPKrjpmlmsB_SDg3x0PeW_L06BFuF7mOq8AcPDYjonfNpG64cQYsINU8sICeDpg.webp"
           alt="프로필"
         />
       </div>
     </header>
+
     <nav>
       <h3>My Tech Stack</h3>
       <div>Technologies I've been working with recently</div>
     </nav>
+    <br />
     <main>
       <!-- html -->
       <img
@@ -175,8 +121,12 @@
     </main>
 
     <footer>
-      <div>123-4567-8910</div>
-      <div>email@gmail.com</div>
+      <div id="foot-items">
+        <div>123-4567-8910</div>
+        <div>email@gmail.com</div>
+      </div>
+      <br />
+
       <hr />
       <div>Designed and built by Pavan MG with Love & Coffee</div>
     </footer>
