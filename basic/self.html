@@ -8,134 +8,168 @@
   </head>
 
   <body>
-    <div class="logo">LOGO</div>
-
-    <div id="nav-items">
-      <div>Home</div>
-      <div>About</div>
-      <div>Tech Stack</div>
-      <div>Projects</div>
+    <!-- 상단 바 -->
+    <div class="nav-items">
+      <div class="logo">
+        <img src="logo.jpg" width="50px" alt="프로필" />
+      </div>
+      <div class="nitem">Home</div>
+      <div class="nitem">About</div>
+      <div class="nitem">Tech Stack</div>
+      <div class="nitem">Projects</div>
     </div>
 
-    <hr />
+    <br />
+    <br />
+    <br />
 
+    <!-- 프로필 -->
     <header>
       <div class="hi">
-        <h2>
+        <h2 class="greeting">
           Hi👋🏻,<br />
           My name is<br />
           janjinn!<br />
           I build things for web
         </h2>
-      </div>
 
-      <div class="myimg">
-        <img
-          src="https://i.namu.wiki/i/IhFrc6uiSNlonNFRXzSNrKrhPKrjpmlmsB_SDg3x0PeW_L06BFuF7mOq8AcPDYjonfNpG64cQYsINU8sICeDpg.webp"
-          alt="프로필"
-        />
+        <div class="myimg">
+          <img
+            src="https://i.namu.wiki/i/IhFrc6uiSNlonNFRXzSNrKrhPKrjpmlmsB_SDg3x0PeW_L06BFuF7mOq8AcPDYjonfNpG64cQYsINU8sICeDpg.webp"
+            alt="프로필"
+          />
+        </div>
       </div>
     </header>
 
-    <nav>
-      <h3>My Tech Stack</h3>
-      <div>Technologies I've been working with recently</div>
-    </nav>
     <br />
+    <br />
+    <br />
+
     <main>
-      <!-- html -->
-      <img
-        width="50"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s"
-        alt="HTML"
-      />
-      <img
-        width="35"
-        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-        alt="CSS"
-      />
-      <img
-        width="50"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeab83jLxJNlqggbc0T40gUZ9D2VGLUg6cI2BNJ6Fwg&s"
-        alt="JavaScript"
-      />
-      <img
-        width="50"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-        alt="React"
-      />
+      <!-- 기술 스택 -->
+      <section>
+        <nav>
+          <h3>My Tech Stack</h3>
+          <div>Technologies I've been working with recently</div>
+        </nav>
+        <br />
+        <!-- 아이콘 모음 -->
+        <section class="icon-container">
+          <img
+            class="iitem"
+            width="50"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s"
+            alt="HTML"
+          />
+          <img
+            class="iitem"
+            width="35"
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt="CSS"
+          />
+          <img
+            class="iitem"
+            width="50"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeab83jLxJNlqggbc0T40gUZ9D2VGLUg6cI2BNJ6Fwg&s"
+            alt="JavaScript"
+          />
+          <img
+            class="iitem"
+            width="50"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+            alt="React"
+          />
+          <img
+            class="iitem"
+            width="50"
+            src="https://avatars.githubusercontent.com/u/18133?s=280&v=4"
+            alt="Git"
+          />
+          <img
+            class="iitem"
+            width="50"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfEXOKbO6MmI5PfTNBJX8B1f_0jkE574iUWkhTTiHa_g&s"
+            alt="VSCODE"
+          />
+          <img
+            class="iitem"
+            width="50"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxuAKV9D75DDP7pwHy6ewIJ9qqd7vWoEssIYBimIR-g&s"
+            alt="Github"
+          />
+        </section>
+      </section>
+
       <br />
-      <img
-        width="50"
-        src="https://avatars.githubusercontent.com/u/18133?s=280&v=4"
-        alt="Git"
-      />
-      <img
-        width="50"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfEXOKbO6MmI5PfTNBJX8B1f_0jkE574iUWkhTTiHa_g&s"
-        alt="VSCODE"
-      />
-      <img
-        width="50"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxuAKV9D75DDP7pwHy6ewIJ9qqd7vWoEssIYBimIR-g&s"
-        alt="Github"
-      />
+      <br />
+      <br />
 
-      <nav>
-        <h3>Projects</h3>
-        <div>Things I've built so for</div>
-      </nav>
+      <!-- 프로젝트 모음 -->
+      <section>
+        <nav>
+          <h3>Projects</h3>
+          <div>Things I've built so for</div>
+        </nav>
 
-      <div class="card-container">
-        <div class="card">
-          <img
-            src="https://i.namu.wiki/i/huPxv5_ir6xIokPke05pqY37o8EST8QYgLQALQI5Myhrj3YJqt1VyPe4s-JrSjxw5O1VsNt2XS8IfSIznuXf0Q.webp"
-            alt="이미지 설명"
-          />
-          <div class="description">
-            <p>프로젝트 SOPAR</p>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://i.namu.wiki/i/huPxv5_ir6xIokPke05pqY37o8EST8QYgLQALQI5Myhrj3YJqt1VyPe4s-JrSjxw5O1VsNt2XS8IfSIznuXf0Q.webp"
+              alt="이미지 설명"
+            />
+            <div class="description">
+              <p>프로젝트 SOPAR</p>
+            </div>
+            <div class="source">
+              <a
+                href="https://github.com/mju-2023-capstone-team-5"
+                target="_blank"
+                >GO TO GITHUB</a
+              >
+            </div>
           </div>
-          <div class="source">
-            <a
-              href="https://github.com/mju-2023-capstone-team-5"
-              target="_blank"
-              >GO GITHUB</a
-            >
+          <div class="card">
+            <img
+              src="https://i.namu.wiki/i/7Ml4qvhlNRl9hX3DRqHC7g_j-6voMFeXYaRKuCiR3cMXJP7KuFEA6kf0BEneLu99vYeLiFbeTTCleaV-1yux5A.webp"
+              alt="이미지 설명"
+            />
+            <div class="description">
+              <p>pdia frontend repository</p>
+            </div>
+            <div class="source">
+              <a href="https://github.com/janjinn/web_advanced" target="_blank"
+                >GO TO REPOSITORY</a
+              >
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img
-            src="https://i.namu.wiki/i/7Ml4qvhlNRl9hX3DRqHC7g_j-6voMFeXYaRKuCiR3cMXJP7KuFEA6kf0BEneLu99vYeLiFbeTTCleaV-1yux5A.webp"
-            alt="이미지 설명"
-          />
-          <div class="description">
-            <p>프로젝트2</p>
-          </div>
-          <div class="source">
-            <a href="https://github.com/janjinn/web_advanced" target="_blank"
-              >GO REPOSITORY</a
-            >
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
 
-    <footer>
-      <div class="logo">LOGO</div>
+    <br />
+    <br />
+    <br />
 
-      <div id="foot-items">
+    <footer>
+      <div class="logo">
+        <img src="logo.jpg" width="50px" alt="프로필" />
+      </div>
+
+      <div id="foot">
         <div>123-4567-8910</div>
         <div>email@gmail.com</div>
       </div>
       <br />
 
       <hr />
-      <div id="foot-menu">
-        <div>Home</div>
-        <div>About</div>
-        <div>Tech Stack</div>
-        <div>Projects</div>
-        <div id="foot-text">
+
+      <div class="foot-items">
+        <div class="fitem">Home</div>
+        <div class="fitem">About</div>
+        <div class="fitem">Tech Stack</div>
+        <div class="fitem">Projects</div>
+        <div class="fitem">
           Designed and built by Pavan MG with Love & Coffee
         </div>
       </div>

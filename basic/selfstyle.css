@@ -1,28 +1,41 @@
-#nav-items div {
-  display: inline-block;
-}
-
 .logo {
   display: inline-block;
+  margin-right: 50%;
 }
 
-#nav-items {
-  display: inline-block;
-  float: right;
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
 }
 
-header {
-  padding: 20px;
+.nitem {
+  display: inline-flex;
+  margin-right: auto;
+}
+
+.nitem:last-child {
+  margin-right: 0;
+}
+
+.hi {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/* 프로필 이미지 스타일 */
+.greeting {
+  display: inline-flex;
+  margin-right: 100px;
+}
+
 .myimg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 10px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to bottom, rgb(31, 219, 116) 0%, rgb(228, 215, 33) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   overflow: hidden;
   background-position: left;
 }
@@ -36,6 +49,19 @@ header {
 main,
 nav {
   text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 300px;
+}
+
+.iitem {
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .card-container {
@@ -73,26 +99,32 @@ nav {
 .card .source:before {
   content: "";
   display: inline-block;
-  width: 16px; /* 이미지의 너비에 맞게 조정 */
-  height: 16px; /* 이미지의 높이에 맞게 조정 */
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 이미지 경로 지정 */
+  width: 16px;
+  height: 16px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 깃허브 아이콘 이미지*/
   background-size: cover;
   margin-right: 5px;
 }
 
-#foot-items div {
+.foot-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fitem {
+  display: inline-flex;
+  margin-right: auto;
+}
+
+.fitem:last-child {
+  display: inline-block;
+  margin-left: 20%;
+}
+
+#foot div {
   display: inline-block;
 }
 
-#foot-items {
-  float: right;
-}
-
-#foot-menu div {
-  display: inline-block;
-}
-
-#foot-text {
-  display: inline-block;
+#foot {
   float: right;
 }
