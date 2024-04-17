@@ -20,20 +20,19 @@ header {
 
 /* 프로필 이미지 스타일 */
 .myimg {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   background-position: left;
 }
 
-/*
-.profile-img img {
+.myimg img {
   width: 100%;
   height: 100%;
   background-position: center;
 }
-*/
+
 main,
 nav {
   text-align: center;
@@ -47,7 +46,7 @@ nav {
 .card {
   width: 300px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 20px;
   overflow: hidden;
@@ -86,5 +85,14 @@ nav {
 }
 
 #foot-items {
+  float: right;
+}
+
+#foot-menu div {
+  display: inline-block;
+}
+
+#foot-text {
+  display: inline-block;
   float: right;
 }
