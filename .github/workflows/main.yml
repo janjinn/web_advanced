@@ -22,4 +22,4 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            ./ s3://my-portfolio-16
+            ./profile/ s3://my-portfolio-16
