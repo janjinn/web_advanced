@@ -1,0 +1,17 @@
+#widthheight-test {
+  background-color: red;
+  width: 50%;
+  height: 20px;
+}
+
+#display-test {
+  background-color: red;
+  display: inline-block;
+  /*inline과 inline-block의 차이점은
+  block과 inline의 중간 형태로 요소는 inline인데
+  내부는 block처럼*/
+  /*inline은 width와 height를 설정 못하지만
+  inline-block은 설정이 가능하다.*/
+  width: 20px;
+  height: 20px;
+}
