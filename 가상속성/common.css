@@ -57,7 +57,7 @@ input:focus::placeholder {
 }
 
 .holiday:first-child {
-  color: red;9
+  color: red;
 }
 
 .holiday:first-letter {
