@@ -1,0 +1,88 @@
+/*방문 안한 링크*/
+a:link {
+  color: red;
+  /*링크 밑줄 제거*/
+  text-decoration: none;
+}
+
+/*방문한 링크*/
+a:visited {
+  color: aqua;
+}
+
+/*커서가 올라가있을 때*/
+a:hover {
+  color: rgb(243, 144, 193);
+}
+
+/*클릭했을 때*/
+a:active {
+  color: aquamarine;
+}
+
+input {
+  outline: none;
+}
+
+/*입력필드*/
+input::placeholder {
+  color: blue;
+  font-size: 15px;
+}
+
+/*입력필드를 클릭해 포커스를 받았을 때*/
+input:focus {
+  background-color: aquamarine;
+  border: green solid 5px;
+  color: white; /*입력값 글자색*/
+}
+
+/*입력필드에 포커스를 줬을 때 입력필드의 글자색*/
+input:focus::placeholder {
+  color: red;
+}
+
+.day4::before {
+  content: "오늘은";
+  color: blue;
+}
+
+.day5::after {
+  content: "입니다";
+  color: violet;
+}
+
+.day:hover {
+  background-color: aqua;
+}
+
+.holiday:first-child {
+  color: red;9
+}
+
+.holiday:first-letter {
+  font-size: 40px;
+}
+
+.please:first-line {
+  color: green;
+}
+
+.holiday:first-child::before {
+  content: "✅";
+}
+
+.holiday:nth-child(3) {
+  content: "이에요";
+  color: rgb(0, 162, 255);
+}
+
+.holiday:last-child {
+  content: "이에요";
+  color: red;
+}
+
+.holiday:last-child::after {
+  content: "이말이에요";
+  color: rgb(0, 162, 255);
+}
