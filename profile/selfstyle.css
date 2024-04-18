@@ -69,6 +69,11 @@ nav {
   margin-bottom: 10px;
 }
 
+a:link {
+  color: rgb(243, 106, 181);
+  text-decoration: none;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
