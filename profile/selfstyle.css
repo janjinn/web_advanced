@@ -90,13 +90,25 @@ nav {
 }
 
 .card .description {
-  padding: 10px;
+  /*padding: 20px;*/
+  display: flex;
   background-color: #f0f0f0;
+  line-height: 5px;
+  height: 70px;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 상단 정렬 */
+  position: relative;
 }
-.card .source {
+.description .content {
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.description .source {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
   font-size: 12px;
 }
 
@@ -116,11 +128,12 @@ nav {
   padding-right: 40px;
 }
 
+/*
 .flogo {
   display: inline-block;
-  margin-right: 55%;
+  margin-right: 70%;
 }
-
+*/
 .fi {
   display: inline-flex;
   margin-left: 30px;
