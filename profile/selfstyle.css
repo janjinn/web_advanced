@@ -90,9 +90,8 @@ nav {
 }
 
 .card .description {
-  /*padding: 20px;*/
   display: flex;
-  background-color: #f0f0f0;
+  background-color: #ddf1f7;
   line-height: 5px;
   height: 70px;
   justify-content: center; /* 수평 가운데 정렬 */
@@ -108,7 +107,7 @@ nav {
 .description .source {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 7%;
   font-size: 12px;
 }
 
@@ -117,6 +116,7 @@ nav {
   display: inline-block;
   width: 16px;
   height: 16px;
+  border-radius: 50%;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 깃허브 아이콘 이미지*/
   background-size: cover;
   margin-right: 5px;
@@ -128,12 +128,6 @@ nav {
   padding-right: 40px;
 }
 
-/*
-.flogo {
-  display: inline-block;
-  margin-right: 70%;
-}
-*/
 .fi {
   display: inline-flex;
   margin-left: 30px;
