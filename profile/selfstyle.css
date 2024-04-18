@@ -1,3 +1,7 @@
+body {
+  margin: auto;
+}
+
 .logo {
   display: inline-block;
   margin-right: 50%;
@@ -6,8 +10,8 @@
 .nav-items {
   display: flex;
   justify-content: flex-end;
+  padding: 30px;
 }
-
 .nitem {
   display: inline-flex;
   margin-right: auto;
@@ -31,7 +35,7 @@
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 10px solid transparent;
+  border: 8px solid transparent;
   background-image: linear-gradient(#fff, #fff),
     linear-gradient(to bottom, rgb(31, 219, 116) 0%, rgb(228, 215, 33) 100%);
   background-origin: border-box;
@@ -106,9 +110,26 @@ nav {
   margin-right: 5px;
 }
 
+#foot {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+.flogo {
+  display: inline-block;
+  margin-right: 55%;
+}
+
+.fi {
+  display: inline-flex;
+  margin-left: 30px;
+}
+
 .foot-items {
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
 }
 
 .fitem {
@@ -119,12 +140,4 @@ nav {
 .fitem:last-child {
   display: inline-block;
   margin-left: 20%;
-}
-
-#foot div {
-  display: inline-block;
-}
-
-#foot {
-  float: right;
 }
