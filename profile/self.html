@@ -3,182 +3,215 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="selfstyle.css" />
+
+    <title>Janjinn's portfolio</title>
   </head>
-
   <body>
-    <!-- 상단 바 -->
-    <div class="nav-items">
-      <div class="logo">
-        <img src="logo.jpg" width="50px" alt="프로필" />
+    <!-- 최상단 메뉴 선택바 -->
+    <nav class="top-nav">
+      <img class="top-logo" src="logo.jpg" alt="logo" />
+      <!-- 메뉴 아이템 -->
+      <ul class="nav-items">
+        <li><a href="#">HOME</a></li>
+        <li>ABOUT</li>
+        <li>TECH STACK</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
+      </ul>
+
+      <!-- SNS 연결 링크 -->
+      <div class="top-sns">
+        <a href="https://github.com/janjinn"
+          ><img src="github.png" alt="github"
+        /></a>
+        <a href="#"><img src="linkedin.svg" alt="linkedin" /></a>
+        <a href="#"><img src="Instagram_logo_2022.svg" alt="insta" /></a>
       </div>
-      <div class="nitem">Home</div>
-      <div class="nitem">About</div>
-      <div class="nitem">Tech Stack</div>
-      <div class="nitem">Projects</div>
-    </div>
 
-    <br />
-    <br />
-    <br />
+      <!-- 모바일 상단 메뉴바 -->
+      <ul class="nav-items mobile">
+        <li><a href="#">HOME</a></li>
+        <li>ABOUT</li>
+        <li>TECH STACK</li>
+        <li>PROJECTS</li>
+        <li>CONTACT</li>
+      </ul>
+    </nav>
 
-    <!-- 프로필 -->
+    <!-- 헤더 : 자기 소개 -->
     <header>
-      <div class="hi">
-        <h2 class="greeting">
-          Hi👋🏻, <br />
-          My name is janjinn! <br />
-          I build things for web <br />
-        </h2>
-
-        <div class="myimg">
-          <img
-            src="https://i.namu.wiki/i/IhFrc6uiSNlonNFRXzSNrKrhPKrjpmlmsB_SDg3x0PeW_L06BFuF7mOq8AcPDYjonfNpG64cQYsINU8sICeDpg.webp"
-            alt="프로필"
-          />
-        </div>
-      </div>
+      <h1>
+        안녕😽,<br />
+        제 이름은 <span>박경진</span>이에요.<br />
+        저는 웹 개발을 하고 있어요❣
+      </h1>
+      <img src="boksoon.jpg" alt="profile" class="profile-img" />
     </header>
 
     <br />
-    <br />
+    <hr />
     <br />
 
-    <main>
-      <!-- 기술 스택 -->
-      <section>
-        <nav>
-          <h3>My Tech Stack</h3>
-          <div>Technologies I've been working with recently</div>
-        </nav>
-        <br />
-        <!-- 아이콘 모음 -->
-        <section class="icon-container">
+    <!-- 기술 스택 섹션 -->
+    <section id="tech-stack">
+      <div class="section-text">
+        <h2>My Tech Stack</h2>
+        <p>제가 주로 사용하는 기술 스택입니다!</p>
+      </div>
+
+      <ul class="tech-stacks">
+        <li>
           <img
-            class="iitem"
-            width="50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsubI1xnS2EsbFC7IKOtHXy3o2yp5zNGHX8-mLk-0nVw&s"
+            width="70px"
+            src="data:image/png;base64,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"
             alt="HTML"
           />
+        </li>
+
+        <li>
           <img
-            class="iitem"
-            width="35"
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            width="50px"
+            src="data:image/png;base64,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"
             alt="CSS"
           />
-          <img
-            class="iitem"
-            width="50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZeab83jLxJNlqggbc0T40gUZ9D2VGLUg6cI2BNJ6Fwg&s"
-            alt="JavaScript"
-          />
-          <img
-            class="iitem"
-            width="50"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
-            alt="React"
-          />
-          <img
-            class="iitem"
-            width="50"
-            src="https://avatars.githubusercontent.com/u/18133?s=280&v=4"
-            alt="Git"
-          />
-          <img
-            class="iitem"
-            width="50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfEXOKbO6MmI5PfTNBJX8B1f_0jkE574iUWkhTTiHa_g&s"
-            alt="VSCODE"
-          />
-          <img
-            class="iitem"
-            width="50"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlxuAKV9D75DDP7pwHy6ewIJ9qqd7vWoEssIYBimIR-g&s"
-            alt="Github"
-          />
-        </section>
-      </section>
+        </li>
 
-      <br />
-      <br />
-      <br />
+        <li>
+          <img
+            width="65px"
+            src="data:image/png;base64,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"
+            alt="JAVASCRIPT"
+          />
+        </li>
 
-      <!-- 프로젝트 모음 -->
-      <section>
-        <nav>
-          <h3>Projects</h3>
-          <div>Things I've built so for</div>
-        </nav>
+        <li>
+          <img
+            width="70px"
+            src="data:image/png;base64,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"
+            alt="REACT"
+          />
+        </li>
 
-        <div class="card-container">
-          <div class="card">
-            <img
-              src="https://i.namu.wiki/i/huPxv5_ir6xIokPke05pqY37o8EST8QYgLQALQI5Myhrj3YJqt1VyPe4s-JrSjxw5O1VsNt2XS8IfSIznuXf0Q.webp"
-              alt="우주"
-            />
-            <div class="description">
-              <div class="content">
-                <h4>프로젝트 SOPAR</h4>
-                사유주차장 공유<br />
-              </div>
-              <div class="source">
-                <a
-                  href="https://github.com/mju-2023-capstone-team-5"
-                  target="_blank"
-                >
-                  GO TO GITHUB
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://i.namu.wiki/i/7Ml4qvhlNRl9hX3DRqHC7g_j-6voMFeXYaRKuCiR3cMXJP7KuFEA6kf0BEneLu99vYeLiFbeTTCleaV-1yux5A.webp"
-              alt="하늘"
-            />
-            <div class="description">
-              <div class="content">
-                <h4>pdia frontend</h4>
-                pdia html, css 실습
-              </div>
-              <div class="source">
-                <a
-                  href="https://github.com/janjinn/web_advanced"
-                  target="_blank"
-                  >GO TO REPOSITORY</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        <li>
+          <img
+            width="65px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABTCAMAAADUbMsyAAAAb1BMVEX////wUDP4tKvvRCD4u7PwTC3vPxbvQBnwTjDvPRPvOw76z8n5wrv5vrbvOQr96+jwSSj+8/H3raL95eLxXEP3qZ/xVzvvNwD2pJn71M/1l4r83tr1k4TzeWb6ysPuKQDzc2DyZ1H2npP0hHP0ins3ou01AAADbElEQVRYha2Y6XqqMBCGTQIE1EIQqwetW+39X+OJQiCZTBaQ+VnH95n1m9jVKsraS0rSyybOOc4oTwkhKf9eDpmUpLM1XQpJj0RZuVsIyclofBEoLYhuxQI1pWti2vrjSGlGoH3a/W9uISX030fMa5Yj0PKzkdowDJp9ln6LQtlM6LmPFE1/XvfpbdtD0UjnQOX28C8fdPpGvUc96/vbrtFIJ9a0X8jSm34xKdJhewYoZ9JSOFIToLtRNoo+/aatms0dblU81Njx4kv7ZAMFJRa6M2Uj0xexhZHG7T7QSwA9iRmNssUtvWsfny2hCqdvRUmIML60t6YqpPyWqktjie5xhwMVWlOKSXAoTv+aJkiUsp4XzaUqpgnKDkXKMM6aU2sfKOLefTTxd6AP3W1jd5G4RDpBfd8mLrXmuEXTyZAbtSsxTxVp8X7S9eQWdS2tjaLMg1TztOunqkUjhXcfeRogTHq79umjdTJHCht1jMm40lP88GmRIgvpYA43quWCMQHBo6A4hwhhEhXp9o/SXwK7oNJPjijGwST86ita9+yhviFCmKbyn2GkrzW1/hhkDjXFh5C3tnCHmeSmrxUBjZKSc4hBmsx8r8/hEwpqusLmLMBMnzrTTnT1iIKaTF1QVz+QmYYWHWMSrjPhMXll8bAPTJDZjsgKxsSkgjfWMyjI1Jv0BKmXb8/qEIaaTCLuapp+QJjHfnWrfRAKmESQraTWmwdAKjWQUBKCQibJeX6/HDj4XqZtWCMCUIspqWkKx7A0Xhd1oKYI07Yx8aj0Y5iGtHTppz5o91z2MrEfjLUnUvZ8z8754BaxYmsjfXPKhxCcS8esxP3dF6cxGeus9YknONI1/HmqSXCClnSNJu6BamFKD6yidsdD6TOjoYjell6khNqNCr29C2ct3ekL/cFWw5Nm7LgTCufUOGlX6+ehpz1aKDmA6snDAS0iokShWaM+ghKMbw9mDYDmooum+gPImFoqsxrFDn+n04WB4Yyr5QCFI5ULYY1ubC2VBZXft+NOaOjw+RcSt8A1Xc9AvuTCAy0ntWc0ZPeVscm1HCJ1nZOpHdetxg/f3MQ7a7BI+Yf/pUcO35whMq2G3f8scTTSbHbHDehDLJl4Dx036rhA4p2pmuZL1FJZ9WC5lDvXA2am0Xu+/23Cfi/7D303Ka2GGC4oAAAAAElFTkSuQmCC"
+            alt="GIT"
+          />
+        </li>
+        <li>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAY1BMVEX///8AAAD5+fnk5OSRkZFQUFBxcXHZ2dksLCzExMTu7u7f39/29vZ8fHzo6OjLy8u8vLyzs7NBQUGYmJhKSkpjY2MYGBjT09M5OTmsrKyEhISmpqZcXFwTExOKiopVVVUkJCSS2/+7AAACIElEQVRIiZ2W54KDIAyACVitq+7Rdd77P+UpMiIyes2vpuSDLIKEOISyZJoSRl3rVqmiCyi5RNVn1BTDSeIpiNXXM7bJtfaf5sA46jm1dGOblA6MjX4OYGQ2Lg1hm6RnrvmEA2i+5E5k9SkHcGiH7HMOIEPgLHfL763d+tIwmb1Zc53467opua3leB1+hdadHH3set5C/2jShLEkbR49tLnRH9LZQf5xl1sdLpNS7tJuEAcoj05FcpVsd0HHdPeD6kSIN7XQOXB1MTFiBChW9Ymy5weR4XNVe61aWhgLugb9mjNULT+HswEUd2kWAlFnVijEV4gj5IWC1KkKFGMTXZASbZKEwQS5N6vftzB4U8YzGb8DR1TVf4FA3t/F+CZ6dvuHPJdaGV+JfpeiMBgp4wtqozkM6oEUo03C2UEtFyG34ScE/mjbGmeYX0+PoCu/eafrsUbsFfS+v1f1gfbx3sgBGW6DNEE6tM4EsRnb8WbhLdBHYsPSirLjY81H/p7XdcBlIoa2qzI0kWlWdeaDIpqMX5CB4iieGuzgJKNYStXxcqXHbvYnUE3DBYS3cnId+r02uUUticoyNToP8+5mgqhPUnnk+rJ0T+PbrTC4w9jeu9BeRHrkjI7mCR2t5BEczGWRoOpGCc3d4GJyx1akLvB03iZRGHRMF/3+FHbQ+alMYx8Y+77P88UFLrmLkWi5328k6yUoQxiXyZg9he2j+g9XjBQ+RkOnvAAAAABJRU5ErkJggg=="
+            alt="GITHUB"
+          />
+        </li>
+        <li>
+          <img
+            width="85px"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAMAAACcnc3UAAABC1BMVEX///+iWf/zTh4KzoL/cmEavP3yTBn3YEEAzHr2loP7TQCfWv+cTf8Iz4H/qJ+vWNqtSf+U5cL/a1vyRgjQsP8AuP3yPQD/Xkr/5eP/aE2aSP+lUv6eUf8Atv7+/Pj8zsX1qpr7oZT+u7P/1tL3WDn718z+gnX5uKn/ZlPzcVf+joL97Oj4yrv+9PDyUif+eGr0iXPxKgD2VAb19P/WwP+9geusT9nZot7Z3uSixd1qtuFRr+JxyPKn5v/p/f/v5vy3hf3U8/9Ty/6L1/3izP7D6v142PqvdP28qv6enf3m1v12kftki/yoZv4pw/zEmf6lPP/Pp//L+OCM6rKB4bbl+u851JCo6sxt3KqecX1GAAACfElEQVRoge3W23bSQBSA4QQSCEKwhoRizFCpUqsRrVKPpdCCta0HtAgp7/8kjoRDMntccrGHunT/l7n51p7MTKJpFEVRFEVRFEX9y9V37hdWNcqrdh+oEVuNSrWS6KGTzCi38MlmpprLJMrljVSOgT7rblqEJleR0aZISkxjv4ZJ1vMiKTOdPUzzUVUkZaaxv4NoPgZjSk3jCR4ZVgApNw28A9OESys3EXfR07VNvONyE2btBta29WzNffsc8dI9gBtXZjoNPFK2caV3AurldwBQ2X1bxiT5hSuuruS7sldHNbVWvvoH08HcQHH1wotK7vems427sPPCwsvKrVWZ7Xl3eUY5VEFqWvvw1e1lr9+ENV749t37o6POcVeJ2DvxA10vLiq5vx6e9plnmqbnsf4pPnlY4mKimTlg5iLGjrFJ19eLwOx4ZiIPGf3g60LcTEwZj3qGSbaLIsnNrgnCNN2SxPzIRBJ1dc8BqZcuhh4w+3hkD46pB5dwaU0P75h+8uH7vPdZYjK8Qwp3LTe/yObE27nrm3hz9iRmcDlUara/SvctJDEP6LcAmm4fnpUBoik5LCX3DN4JqF+0K9l92xEGZZhj8k7ESbnZTd9EmLfQHPWBmUbxSX7PB8lR5/8JA+bFLDPRP9mxeq5vLft+NXvWHQw9xsy+GlHTRj+irL3IuqNISYmRZSfahDm2sqk2YE4FcgPmtUiqNyeAVG+KL3MTZgRI5aZkaZWbo//ZvFZrSt/nSK2pRQC1sxPFJjyf1lQxqU34XIKpekx431pj5aT4XVG/srPG1nJ57Q2R8X8C/zXhYlbx0Uyp08i2o6nqg0lRFEVRFEVR1F/YT5MnUWD1tXrxAAAAAElFTkSuQmCC"
+            alt="FIGMA"
+          />
+        </li>
+      </ul>
+    </section>
 
-    <br />
-    <br />
+    <hr />
     <br />
 
-    <footer>
-      <div id="foot">
-        <div class="flogo">
-          <img src="logo.jpg" width="50px" alt="프로필" />
-        </div>
-        <a class="fi" href="#">123-4567-8910</a>
-        <a class="fi" href="#">email@gmail.com</a>
+    <!-- 프로젝트 섹션 -->
+    <section id="project-section">
+      <div class="section-text">
+        <h2>Projects</h2>
+        <p>제 깃허브 프로젝트 및 레포지토리에요</p>
       </div>
-      <br />
+      <div class="project-items">
+        <!-- 프로젝트 1 -->
+        <article class="project-item">
+          <div class="project-thumbnail"></div>
+          <div class="project-content">
+            <h4>주차장 공유 어플</h4>
+            <p class="project-desc">안드로이드 어플</p>
+            <div class="project-tech-stack">
+              기술스택: kotlin, android studio, figma
+            </div>
+            <!-- 바로가기 링크 -->
+            <div class="project-link">
+              <a href="#">
+                <img src="github.png" />
+                <div>View Code</div>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 프로젝트 2 -->
+        <article class="project-item">
+          <div class="project-thumbnail"></div>
+          <div class="project-content">
+            <h4>알고리즘 레포지토리</h4>
+            <p class="project-desc">알고리즘 코드 업로드</p>
+            <div class="project-tech-stack">기술스택: java</div>
+            <!-- 바로가기 링크 -->
+            <div class="project-link">
+              <a href="#">
+                <img src="github.png" />
+                <div>View Code</div>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 프로젝트 3 -->
+        <article class="project-item">
+          <div class="project-thumbnail"></div>
+          <div class="project-content">
+            <h4>pdia frontend 레포지토리</h4>
+            <p class="project-desc">html과 css 연습</p>
+            <div class="project-tech-stack">기술스택: html, css</div>
+            <!-- 바로가기 링크 -->
+            <div class="project-link">
+              <a href="#">
+                <img src="github.png" />
+                <div>View Code</div>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <hr />
-
-      <div class="foot-items">
-        <div class="fitem">Home</div>
-        <div class="fitem">About</div>
-        <div class="fitem">Tech Stack</div>
-        <div class="fitem">Projects</div>
-        <div class="fitem">
-          Designed and built by Pavan MG with Love & Coffee
+    <!-- footer -->
+    <!-- 가로선 윗부분-->
+    <footer>
+      <div class="footer-upper">
+        <img class="footer-logo" src="logo.jpg" />
+        <!-- 이메일/연락처/SNS -->
+        <div class="footer-content">
+          <div class="footer-contact">
+            <a class="tel" href="#">123-4567-8910</a>
+            <a class="email" href="#">sample@gmail.com</a>
+            <div class="footer-links">
+              <a href="https://github.com/janjinn" target="_blank">
+                <img width="50px" src="github.png" alt="github" />
+              </a>
+              <a href="#" target="_blank">
+                <img
+                  width="100px"
+                  height="65px"
+                  src="linkedin.svg"
+                  alt="linkedin"
+                />
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <!-- 가로선 -->
+      <div class="hr"></div>
+      <div class="madeby">
+        Designed and built <span class="br"></span>by Pavan <span>MG</span> with
+        <span>Love</span> & <span>Coffee</span>
+        &copy; 2024
       </div>
     </footer>
   </body>

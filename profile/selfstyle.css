@@ -1,158 +1,297 @@
-@media all {
-  body {
-    margin: auto;
-  }
+/* ------- 상단 네비게이션 -----  */
+body {
+  /* 요소에 최대 길이를 주고, margin:0 auto를 주면,
+  maring 좌우가 auto로 적용되며
+  가운데 정렬이 된다.
+   */
+  max-width: 1228px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: rgb(248, 222, 246);
+}
 
-  .logo {
-    display: inline-block;
-    margin-right: 50%;
-  }
+a {
+  text-decoration: none;
+  color: #e70faa;
+}
 
-  .nav-items {
-    display: flex;
-    justify-content: flex-end;
-    padding: 30px;
-  }
-  .nitem {
-    display: inline-flex;
-    margin-right: auto;
-  }
+hr {
+  border: none;
+  height: 4px; /* 수평선의 두께를 조절합니다. */
+  background: linear-gradient(
+    to right,
+    rgba(253, 253, 253, 0),
+    rgb(235, 162, 225),
+    rgba(253, 253, 253, 0)
+  );
+}
 
-  .nitem:last-child {
-    margin-right: 0;
-  }
+li {
+  list-style-type: none;
+}
+.top-nav {
+  padding: 40px 10px;
 
-  .hi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  .greeting {
-    display: inline-flex;
-    margin-right: 100px;
-  }
+.top-logo {
+  width: 97px;
+  height: 59px;
+}
 
-  .myimg {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 8px solid transparent;
-    background-image: linear-gradient(#fff, #fff),
-      linear-gradient(to bottom, rgb(31, 219, 116) 0%, rgb(228, 215, 33) 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    overflow: hidden;
-    background-position: left;
-  }
+.nav-items {
+  /* 정렬 */
+  display: flex;
+  justify-content: space-between; /* 가로 가운데 정렬 */
+  align-items: center; /* 세로 가운데 정렬 */
+  /* flex-item 사이의 간격 */
+  gap: 50px;
+}
 
-  .myimg img {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-  }
+.nav-items li {
+  /* 상단 메뉴 글자에 대한 스타일 */
+  color: #666;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px; /* 130% */
+}
 
-  main,
-  nav {
-    text-align: center;
-  }
+.top-sns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.top-sns img {
+  width: 30px;
+  height: 30px;
+}
 
-  .icon-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    width: 300px;
-  }
+/* ------- 헤더 -----  */
 
-  .iitem {
-    margin-right: 20px;
-    margin-bottom: 10px;
-  }
+header {
+  padding-top: 220px;
+  padding-bottom: 300px;
+  background-color: rgba(245, 235, 243, 0.5);
+  border-radius: 10%;
+  height: 1px;
 
-  a:link {
-    color: rgb(243, 106, 181);
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .card {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    overflow: hidden;
-    position: relative;
-  }
+header h1 {
+  color: #42446e;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 120.69% */
+  letter-spacing: -1px;
+  margin-left: 5%;
+}
+header h1 span {
+  /* 글씨에 그라데이션 주는 효과 */
+  background: linear-gradient(120deg, #f5b913 -2.06%, #ee8add 100%);
+  background-clip: text;
+  color: transparent; /* 글자 색을 투명하게 */
+}
 
-  .card img {
-    width: 100%;
-    height: 300px;
-    display: block;
-  }
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to bottom, rgb(243, 116, 243) 0%, rgb(236, 230, 136) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  overflow: hidden;
+  background-position: center;
+  margin-right: 5%;
+}
 
-  .card .description {
-    display: flex;
-    background-color: #ddf1f7;
-    line-height: 5px;
-    height: 70px;
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 상단 정렬 */
-    position: relative;
-  }
-  .description .content {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .description .source {
-    position: absolute;
-    bottom: 0;
-    right: 7%;
-    font-size: 12px;
-  }
+/* ------- 기술 스택 섹션 ----- */
 
-  .card .source:before {
-    content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufUFfSGiCAoz-mN1O4_2jIBjvoQUqgFpaHSiwb2giiA&s.png"); /* 깃허브 아이콘 이미지*/
-    background-size: cover;
-    margin-right: 5px;
-  }
+.section-text {
+  padding-bottom: 130px;
+}
+.section-text h2 {
+  color: #42446e;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.section-text p {
+  color: #666;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
 
-  #foot {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
-  }
+.tech-stacks {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.tech-stacks li {
+  margin: auto;
+  text-align: center;
+}
 
-  .fi {
-    display: inline-flex;
-    margin-left: 30px;
-  }
+.tech-img {
+  size: 50px;
+}
 
-  .foot-items {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-  }
+#tech-stack {
+  padding-bottom: 300px;
+}
+/* ------- 프로젝트 섹션 ----- */
+.project-link img {
+  width: 20px;
+}
 
-  .fitem {
-    display: inline-flex;
-    margin-right: auto;
-  }
+#project-section {
+  padding-bottom: 300px;
+}
+.project-items {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.project-item {
+  position: relative;
+  box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
 
-  .fitem:last-child {
-    display: inline-block;
-    margin-left: 20%;
-  }
+.project-link {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+.project-thumbnail {
+  width: 100%;
+  height: 256px;
+  /* 위쪽 둥글게 둥글게 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /* 배경 이미지 가운데 정렬, 가득차게 */
+  background-image: url("하늘사진.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.project-content {
+  padding: 30px;
+  /* 세로 간격(gap)을 일정하게 주기 위해 flex 적용 */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-content h4 {
+  color: #42446e;
+  font-size: 24px;
+  font-weight: 700;
+}
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.project-link a {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-decoration-line: underline;
+}
+
+.project-desc {
+  color: #666;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px; /* 144.444% */
+}
+
+.project-tech-stack {
+  color: #42446e;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+/* ---- footer ---- */
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  padding-bottom: 50px;
+}
+.footer-content {
+  display: flex;
+
+  justify-content: space-between;
+}
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 97px;
+  height: 59px;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  /* 텍스트 스타일 */
+  color: #42446e;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-contact a {
+  /* 기본속성으로 적용되어 있는 언더라인 제거 */
+  color: #42446e;
+  text-decoration: none;
+}
+footer .footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.hr {
+  width: 100%;
+  border-bottom: solid 1px #666;
+}
+
+.madeby {
+  color: #666;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
+}
+.madeby span {
+  background: linear-gradient(0deg, #13b0f5 -2.06%, #e70faa 100%);
+  background-clip: text;
+  color: transparent; /* 글자 색을 투명하게 */
+}
+
+.nav-items.mobile {
+  display: none;
+  /* visibility: hidden; */
 }
