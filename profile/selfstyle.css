@@ -133,21 +133,18 @@ header h1 span {
   display: block;
 }
 
-/* ------- 기술 스택 섹션 ----- */
+/* ------- h2 제목 스타일 적용 ------*/
 
 .section-text {
-  background-clip: text;
-  color: transparent;
+  background-clip: text; /*글자 배경이 텍스트에서만 보이도록*/
   background-image: linear-gradient(180deg, #4bbcd8, #e48cf0, #9ba1f3);
   background-size: 100% 300%;
   background-position-y: 0%;
-  animation: gradient 5s linear infinite;
+  animation: gradient 5s linear infinite; /*일정하게 5초 동안 색변화 */
 }
 
 .section-text h2 {
-  background-clip: text;
-  color: transparent;
-
+  color: transparent; /*글자를 투명하게 해서 배경이 보이도록*/
   text-align: center;
   font-size: 48px;
   font-weight: 700;
@@ -174,6 +171,8 @@ header h1 span {
 .section-text {
   padding-bottom: 130px;
 }
+
+/* ------- 기술 스택 섹션 ----- */
 
 .tech-stacks {
   display: flex;
